@@ -1,0 +1,51 @@
+.favorites {
+  padding: 3rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.favorites h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 3rem;
+  color: #000000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.favorites-empty {
+  text-align: center;
+  padding: 5rem 3rem;
+  background-color: rgba(255, 248, 248, 0.05);
+  border-radius: 10px;
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+.favorites-empty h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #7c060c;
+}
+
+.favorites-empty p {
+  color: #ffffff;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+
+/* Animation for new favorites being added */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.breed-grid > * {
+  animation: fadeIn 0.5s ease-out forwards;
+}
